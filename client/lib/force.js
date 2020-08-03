@@ -207,6 +207,7 @@ var force = (function () {
             queryString = url.substr(url.indexOf('#') + 1);
             obj = parseQueryString(queryString);
             oauth = obj;
+            console.log('oauth',oauth);
             tokenStore.forceOAuth = JSON.stringify(oauth);
             if (loginSuccessHandler) {
                 loginSuccessHandler();
